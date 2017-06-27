@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Autofac;
-using Autofac.Core;
 using System.IO;
 using System.Reflection;
+using CQRSCoreV2.Core;
 using Serilog;
 using Module = Autofac.Module;
 
@@ -21,6 +18,7 @@ namespace CQRSCoreV2
                .ToArray();
 
             RegisterMediator(builder, assemblies);
+
             RegisterLogger(builder);
 
             builder.Register<TestReslover>();

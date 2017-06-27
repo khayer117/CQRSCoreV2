@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace CQRSCoreV2
+namespace CQRSCoreV2.Core
 {
     using System;
     using System.Globalization;

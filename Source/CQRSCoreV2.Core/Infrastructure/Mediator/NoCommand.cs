@@ -1,4 +1,5 @@
-namespace CQRSCoreV2 { 
+namespace CQRSCoreV2.Core
+{ 
     public class NoCommand
     {
         private static readonly NoCommand Singleton = new NoCommand();

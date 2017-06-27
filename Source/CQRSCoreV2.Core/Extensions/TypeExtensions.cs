@@ -1,4 +1,4 @@
-namespace CQRSCoreV2
+namespace CQRSCoreV2.Core
 {
     using System;
     using System.Text;

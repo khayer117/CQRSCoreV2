@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Autofac;
-using Serilog;
-using Serilog.Events;
+using CQRSCoreV2.Core;
 
 namespace CQRSCoreV2
 {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
+using CQRSCoreV2.Core;
 
 namespace CQRSCoreV2
 {
@@ -40,12 +41,15 @@ namespace CQRSCoreV2
 
             var userList = await this.commandBus.Send<ICollection<UserInfoDto>>(getUserListCommand);
 
-            this.logger.Info("User Info",userList);
+            this.logger.Info("User Info: " + userList.Count);
         }
 
         public async Task AddUser()
         {
-            var addUserCommand = new AddUserCommand();
+            var addUserCommand = new AddUserCommand()
+            {
+                UserName = "Shan Roy"
+            };
 
             await  this.commandBus.Send<NoCommandResult>(addUserCommand);
         }

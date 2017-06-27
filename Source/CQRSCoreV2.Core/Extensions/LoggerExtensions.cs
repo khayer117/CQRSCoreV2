@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace CQRSCoreV2
+namespace CQRSCoreV2.Core
 {
     using System;
 

@@ -8,7 +8,7 @@ using Autofac;
 using Autofac.Builder;
 using Autofac.Features.Scanning;
 
-namespace CQRSCoreV2
+namespace CQRSCoreV2.Core
 {
     public static class ContainerBuilderExtensions
     {

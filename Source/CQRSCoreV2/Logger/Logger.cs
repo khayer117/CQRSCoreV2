@@ -7,11 +7,12 @@ namespace CQRSCoreV2
     using Serilog.Context;
     using Serilog.Events;
     using System.Collections.Generic;
+    using CQRSCoreV2.Core;
     
     //using SeriLogger = Serilog.ILogger;
     using SeriLogger = Serilog.Core.Logger;
     
-    public class Logger : ILogger
+    public class Logger : Core.ILogger
     {
         private readonly SeriLogger logger;
 

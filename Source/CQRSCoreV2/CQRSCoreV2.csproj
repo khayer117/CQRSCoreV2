@@ -75,22 +75,8 @@
   <ItemGroup>
     <Compile Include="AddUserCommand.cs" />
     <Compile Include="AddUserHandler.cs" />
-    <Compile Include="Core\AssembliesProvider.cs" />
-    <Compile Include="CQRS\CommandBus.cs" />
-    <Compile Include="CQRS\EventBus.cs" />
-    <Compile Include="CQRS\ICommandBus.cs" />
-    <Compile Include="CQRS\ICommandHandler.cs" />
-    <Compile Include="CQRS\IEventBus.cs" />
-    <Compile Include="CQRS\IEventHandler.cs" />
-    <Compile Include="Extensions\CommandBusExtensions.cs" />
-    <Compile Include="Extensions\ContainerBuilderExtensions.cs" />
-    <Compile Include="Extensions\LoggerExtensions.cs" />
-    <Compile Include="CQRS\NoCommand.cs" />
-    <Compile Include="CQRS\NoCommandResult.cs" />
-    <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="GetUserListCommand.cs" />
     <Compile Include="GetUserListHandler.cs" />
-    <Compile Include="Logger\ILogger.cs" />
     <Compile Include="Logger\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,6 +88,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQRSCoreV2.Core\CQRSCoreV2.Core.csproj">
+      <Project>{50d662ab-93f2-4772-9fb8-36f3156e58be}</Project>
+      <Name>CQRSCoreV2.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
