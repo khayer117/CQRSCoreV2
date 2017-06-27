@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSCoreV2", "CQRSCoreV2\CQRSCoreV2.csproj", "{BA694EC3-DE83-4707-B11D-EFE32A440F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSCoreV2.Core", "CQRSCoreV2.Core\CQRSCoreV2.Core.csproj", "{50D662AB-93F2-4772-9FB8-36F3156E58BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA694EC3-DE83-4707-B11D-EFE32A440F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA694EC3-DE83-4707-B11D-EFE32A440F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA694EC3-DE83-4707-B11D-EFE32A440F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA694EC3-DE83-4707-B11D-EFE32A440F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D662AB-93F2-4772-9FB8-36F3156E58BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D662AB-93F2-4772-9FB8-36F3156E58BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D662AB-93F2-4772-9FB8-36F3156E58BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D662AB-93F2-4772-9FB8-36F3156E58BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
