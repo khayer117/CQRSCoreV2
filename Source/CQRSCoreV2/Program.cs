@@ -2,6 +2,7 @@
 using System.Linq;
 using Autofac;
 using CQRSCoreV2.Core;
+using CQRSCoreV2.TestService;
 
 namespace CQRSCoreV2
 {
@@ -10,6 +11,10 @@ namespace CQRSCoreV2
         static void Main(string[] args)
         {
             var container = CreateContainer();
+
+
+            //(new TestPaymentService(container)).Run().Wait();
+            //(new TestCompressor(container)).Run();
 
             (new TestCqrs(container)).Run().Wait();
 

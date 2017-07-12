@@ -75,14 +75,27 @@
   <ItemGroup>
     <Compile Include="AddUserCommand.cs" />
     <Compile Include="AddUserHandler.cs" />
+    <Compile Include="Compressor\CompressorA.cs" />
+    <Compile Include="Compressor\CompressorB.cs" />
+    <Compile Include="Compressor\CompressorC.cs" />
+    <Compile Include="Compressor\CompressorService.cs" />
     <Compile Include="GetUserListCommand.cs" />
     <Compile Include="GetUserListHandler.cs" />
+    <Compile Include="Compressor\ICompress.cs" />
     <Compile Include="Logger\Logger.cs" />
+    <Compile Include="PaymentGetway\IPaymentClient.cs" />
+    <Compile Include="PaymentGetway\PaymentBilling.cs" />
+    <Compile Include="PaymentGetway\PaymentMethod.cs" />
+    <Compile Include="PaymentGetway\PaymentService.cs" />
+    <Compile Include="PaymentGetway\PaypalClient.cs" />
+    <Compile Include="PaymentGetway\SecurePayClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceRegistration.cs" />
-    <Compile Include="TestCqrs.cs" />
-    <Compile Include="TestReslover.cs" />
+    <Compile Include="TestService\TestCompressor.cs" />
+    <Compile Include="TestService\TestCqrs.cs" />
+    <Compile Include="TestService\TestPaymentService.cs" />
+    <Compile Include="TestService\TestReslover.cs" />
     <Compile Include="UserInfoDto.cs" />
   </ItemGroup>
   <ItemGroup>
