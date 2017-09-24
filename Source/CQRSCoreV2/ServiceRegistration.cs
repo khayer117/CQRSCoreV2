@@ -19,7 +19,7 @@ namespace CQRSCoreV2
                .Assemblies
                .ToArray();
 
-            RegisterMediator(builder, assemblies);
+            //RegisterMediator(builder, assemblies);
 
             RegisterLogger(builder);
 
@@ -63,23 +63,23 @@ namespace CQRSCoreV2
             builder.Register<CompressorService>();
         }
 
-        private void RegisterMediator(ContainerBuilder builder, Assembly[] assemblies)
-        {
-            builder.RegisterClosingTypes(typeof(ICommandHandler<,>), assemblies)
-                .PreserveExistingDefaults();
+        //private void RegisterMediator(ContainerBuilder builder, Assembly[] assemblies)
+        //{
+        //    builder.RegisterClosingTypes(typeof(ICommandHandler<,>), assemblies)
+        //        .PreserveExistingDefaults();
 
-            //builder.RegisterClosingTypes(typeof(IEventHandler<>), assemblies);
+        //    //builder.RegisterClosingTypes(typeof(IEventHandler<>), assemblies);
 
-            builder.Register<Func<Type, object>>(c =>
-            {
-                var ctx = c.Resolve<IComponentContext>();
-                return ctx.Resolve;
-            });
+        //    builder.Register<Func<Type, object>>(c =>
+        //    {
+        //        var ctx = c.Resolve<IComponentContext>();
+        //        return ctx.Resolve;
+        //    });
 
-            builder.Register<CommandBus>();
-            builder.Register<EventBus>();
+        //    builder.Register<CommandBus>();
+        //    builder.Register<EventBus>();
 
-        }
+        //}
         private void RegisterLogger(ContainerBuilder builder)
         {
             const string MessageTemplate = "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} " +
